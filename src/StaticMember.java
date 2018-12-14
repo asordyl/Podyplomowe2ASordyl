@@ -1,26 +1,26 @@
 public class StaticMember {
     public static void main (String[] args){
-        FamillyMember dad = new FamillyMember();
+        FamilyMember dad = new FamilyMember();
         dad.name = "Piotr";
         dad.age = 39;
 
-        FamillyMember mum = new FamillyMember();
+        FamilyMember mum = new FamilyMember();
         mum.name = "Katarzyna";
         mum.age = 37;
 
-        FamillyMember kid = new FamillyMember();
+        FamilyMember kid = new FamilyMember();
         kid.name = "Zosia";
         kid.age = 12;
 
         show(mum);
         show(dad);
         show(kid);
-        FamillyMember.surname = "Kowlaska";
+        FamilyMember.surname = "Kowalska";
         show(mum);
 
     }
 
-    static void show(FamillyMember familyMember){
+    static void show(FamilyMember familyMember){
         System.out.print(familyMember.name);
         System.out.print(" ");
         System.out.print(familyMember.surname);
@@ -30,7 +30,7 @@ public class StaticMember {
     }
 }
 
-class FamillyMember {
+class FamilyMember {
     static String surname = "Nowak";
     String name;
     int age;

@@ -1,6 +1,6 @@
 public class DayCounter {
     public static void main(String[] args) {
-        int yearIn = 2018;
+        int yearIn = 2016;
         int monthIn = 2;
         if (args.length > 0)
             monthIn = Integer.parseInt(args[0]);

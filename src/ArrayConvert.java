@@ -28,10 +28,10 @@ public class ArrayConvert {
             case "osiem":
                 slowoNr = 8;
                 break;
-            case "dzieiwęć":
+            case "dziewięć":
                 slowoNr = 9;
                 break;
-            case "dzieisięć":
+            case "dziesięć":
                 slowoNr = 10;
                 break;
             default:
