@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Casino {
 
-    public static final int JACKPOT_NEMBER = 1_000;
+    public static final int JACKPOT_NEMBER = 10_000;
     public static void main(String[] args) {
         Random random = new Random();
         Jackpot[] jackpots = new Jackpot[JACKPOT_NEMBER];
@@ -14,6 +14,7 @@ public class Casino {
 
         for (int i = 0; i < jackpots.length; i++) {
             jackpots[i] = new Jackpot(random);
+            System.out.println(jackpots[i]);
         }
 
         for (int j = 1; j < jackpots.length; j++) {
@@ -22,11 +23,13 @@ public class Casino {
             }
         }
 
-        int k = 0;
+        /*int k = 1;
         do {
             Jackpot jack = new Jackpot(random);
+            System.out.println("Jack w " + k + " próbie");
+            k = k++;
         }
-        while (jackpot.equals(jackpots));
+        while (jackpot.equals(jackpots));*/
 
     }
 }
