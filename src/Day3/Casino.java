@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Casino {
 
-    public static final int JACKPOT_NEMBER = 10_000;
+    public static final int JACKPOT_NEMBER = 1_000;
     public static void main(String[] args) {
         Random random = new Random();
         Jackpot[] jackpots = new Jackpot[JACKPOT_NEMBER];
